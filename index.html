@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bio Data</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1 style="display: flex; justify-content: center; align-items: center;">BIO DATA GENERATOR</h1>
+    </div>
+    <div class="mainContainer">
+      <div class="formContainer">
+        <div id="form-outer">
+          <form id="survey-form" method="GET" action="">
+            <div class="rowTab">
+              <div class="labels">
+                <label for="name">Name: </label>
+              </div>
+              <div class="rightTab">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="input-field"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="rowTab">
+              <div class="labels">
+                <label for="fname">Father's Name: </label>
+              </div>
+              <div class="rightTab">
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  class="input-field"
+                  placeholder="Enter your father's name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="rowTab">
+              <div class="labels">
+                <label for="mname">Mother's Name: </label>
+              </div>
+              <div class="rightTab">
+                <input
+                  type="text"
+                  name="mname"
+                  id="mname"
+                  class="input-field"
+                  placeholder="Enter your mother's name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="rowTab">
+              <div class="labels">
+                <label for="email">Email: </label>
+              </div>
+              <div class="rightTab">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="input-field"
+                  placeholder="Enter your Email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="rowTab">
+              <div class="labels">
+                <label for="age">Age: </label>
+              </div>
+              <div class="rightTab">
+                <input
+                  type="number"
+                  name="age"
+                  id="age"
+                  min="1"
+                  max="125"
+                  class="input-field"
+                  placeholder="Age"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="rowTab">
+              <div class="labels">
+                <label for="dob">D.O.B: </label>
+              </div>
+              <div class="rightTab">
+                <input
+                  type="date"
+                  name="dob"
+                  id="dob"
+                  class="input-field"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="rowTab">
+              <div class="labels">
+                <label for="department">Highest Qualification: </label>
+              </div>
+              <div class="rightTab">
+                <select id="department" name="department" class="dropdown">
+                  <option disabled value="">Select an option</option>
+                  <option value="HSLC">HSLC Passed</option>
+                  <option value="HS">HS Passed</option>
+                  <option value="Diploma">Diploma</option>
+                  <option value="Graduation">Graduation</option>
+                  <option value="Masters">Masters</option>
+                  <option value="PHD">PHD</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="rowTab">
+              <div class="labels">
+                <label for="gender">Gender: </label>
+              </div>
+              <div class="rightTab">
+                <ul style="list-style: none">
+                  <li class="radio">
+                    <label
+                      ><input
+                        name="gender"
+                        value="male"
+                        type="radio"
+                        class="userRatings"
+                      />
+                      Male</label
+                    >
+                  </li>
+                  <li class="radio">
+                    <label
+                      ><input
+                        name="gender"
+                        value="female"
+                        type="radio"
+                        class="userRatings"
+                      />
+                      Female</label
+                    >
+                  </li>
+                  <li class="radio">
+                    <label
+                      ><input
+                        name="gender"
+                        value="others"
+                        type="radio"
+                        class="userRatings"
+                      />
+                      Others</label
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="rowTab">
+              <div class="labels">
+                <label for="address">Address: </label>
+              </div>
+              <div class="rightTab">
+                <textarea
+                  id="address"
+                  class="input-field"
+                  style="height: 50px; resize: vertical"
+                  name="address"
+                  placeholder="Enter your address here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="rowTab">
+              <div class="labels">
+                <label for="pincode">Pincode: </label>
+              </div>
+              <div class="rightTab">
+                <input
+                  type="number"
+                  name="pincode"
+                  id="pincode"
+                  class="input-field"
+                  style="height: 20px"
+                  placeholder="6 - - - - -"
+                />
+              </div>
+            </div>
+
+            <div class="rowTab">
+              <div class="labels">
+                <label for="language">Language Known: </label>
+              </div>
+              <div class="rightTab">
+                <ul id="language" style="list-style: none">
+                  <li class="checkbox">
+                    <label
+                      ><input
+                        name="language"
+                        value="english"
+                        type="checkbox"
+                        class="userRatings"
+                      />
+                      English</label
+                    >
+                  </li>
+                  <li class="checkbox">
+                    <label
+                      ><input
+                        name="language"
+                        value="tamil"
+                        type="checkbox"
+                        class="userRatings"
+                      />
+                      Assamese</label
+                    >
+                  </li>
+                  <li class="checkbox">
+                    <label
+                      ><input
+                        name="language"
+                        value="hindi"
+                        type="checkbox"
+                        class="userRatings"
+                      />
+                      Hindi</label
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button id="submit" type="submit">Submit</button>
+            <button id="reset" type="reset">Reset</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="vl"></div>
+
+      <div class="bio-container">
+        <h2 class="bio-heading">My Bio Data</h2>
+
+        <div class="bio-item">
+          <p class="bio-label">Name:</p>
+          <p class="bio-value">John Doe</p>
+        </div>
+        <div class="bio-item">
+          <p class="bio-label">Father's Name:</p>
+          <p class="bio-value">James Doe</p>
+        </div>
+        <div class="bio-item">
+          <p class="bio-label">Mother's Name:</p>
+          <p class="bio-value">Jane Doe</p>
+        </div>
+        <div class="bio-item">
+          <p class="bio-label">Gender:</p>
+          <p class="bio-value">Male</p>
+        </div>
+        <div class="bio-item">
+          <p class="bio-label">Email:</p>
+          <p class="bio-value">john.doe@example.com</p>
+        </div>
+        <div class="bio-item">
+          <p class="bio-label">DOB:</p>
+          <p class="bio-value">01/01/2004</p>
+        </div>
+        <div class="bio-item">
+          <p class="bio-label">Address:</p>
+          <p class="bio-value">123 Main St, Anytown, USA</p>
+        </div>
+        <div class="bio-item">
+          <p class="bio-label">Pincode:</p>
+          <p class="bio-value">123456</p>
+        </div>
+        <div class="bio-item">
+          <p class="bio-label">Language:</p>
+          <p class="bio-value">English</p>
+        </div>
+        <div class="bio-item">
+          <p class="bio-label">Qualification:</p>
+          <p class="bio-value">Bachelor of Science in Computer Science</p>
+        </div>
+        <div class="bio-item">
+          <p class="bio-label">Occupation:</p>
+          <p class="bio-value">Software Engineer</p>
+        </div>
+
+        <div class="bio-declaration">
+          <p class="bio-declaration-text">Declaration:</p>
+          <p class="bio-declaration-value">
+            I hereby declare that the above information is true and correct to
+            the best of my knowledge and belief. I understand that any false
+            statement or misrepresentation may result in my disqualification or
+            other consequences as deemed appropriate.
+          </p>
+          <br>
+          <p>Date:</p>
+          <p>
+            Place: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Signature
+          </p>
+        </div>
+        <button id="print-button" style="display: flex; justify-content: center; align-items: center;">PRINT</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

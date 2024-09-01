@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Main Container Styles */
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+}
+
+/* Form Container Styles */
+#form-outer {
+    background-color: #ffffff;
+    margin: 0;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 900px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Label and Input Styles */
+.labels {
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.rightTab {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#userAge {
+    width: auto;
+}
+
+button {
+    background-color: #1a8cff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.dropdown {
+    width: calc(100% - 22px);
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* Radio Button Styles */
+.radio {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between radio buttons */
+    vertical-align: middle; /* Align vertically with text */
+}
+
+.radio label {
+    display: flex;
+    align-items: center; /* Center align the text with the radio button */
+}
+
+input[type="radio"] {
+    margin-right: 5px; /* Space between radio button and label */
+}
+
+/* Checkbox Styles */
+.checkbox {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between checkboxes */
+}
+
+/* Bio Container Styles */
+.bio-container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 100%;
+    height: 940px;
+    max-width: 600px; /* Adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bio-heading {
+    font-size: 1.5em;
+    text-align: center;
+    color: #333;
+    /* margin-bottom: 15px; */
+}
+
+.bio-item {
+    display: flex;
+    /* margin-bottom: 10px; */
+}
+
+.bio-label {
+    font-weight: bold;
+    /* margin-right: 10px; */
+    flex-shrink: 0; /* Prevent shrinking */
+    width: 140px; /* Adjust width as needed */
+}
+
+.bio-value {
+    flex-grow: 1; /*Allow value to take up remaining space*/
+}
+
+.bio-declaration {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.bio-declaration-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.bio-declaration-value {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Vertical Line Styles */
+.vl {
+    border-left: 6px solid green;
+    height: 980px; /* Adjust to fit the height of containers */
+    margin: 0 20px; /* Space between the line and containers */
+}
