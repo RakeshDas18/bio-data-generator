@@ -1,23 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('survey-form');
-    const bioContainer = document.querySelector('.bio-container');
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("survey-form");
+  const bioContainer = document.querySelector(".bio-container");
 
-    function updateBio() {
-        const name = document.getElementById('name').value;
-        const fname = document.getElementById('fname').value;
-        const mname = document.getElementById('mname').value;
-        const email = document.getElementById('email').value;
-        const age = document.getElementById('age').value;
-        const dob = document.getElementById('dob').value;
-        const department = document.getElementById('department').value;
-        const gender = document.querySelector('input[name="gender"]:checked')?.value;
-        const address = document.getElementById('address').value;
-        const pincode = document.getElementById('pincode').value;
-        const languages = Array.from(document.querySelectorAll('input[name="language"]:checked'))
-                                .map(input => input.value).join(', ');
+  function updateBio() {
+    const name = document.getElementById("name").value;
+    const fname = document.getElementById("fname").value;
+    const mname = document.getElementById("mname").value;
+    const email = document.getElementById("email").value;
+    const age = document.getElementById("age").value;
+    const dob = document.getElementById("dob").value;
+    const department = document.getElementById("department").value;
+    const gender = document.querySelector('input[name="gender"]:checked')?.value;
+    const address = document.getElementById("address").value;
+    const pincode = document.getElementById("pincode").value;
+    const languages = Array.from(
+      document.querySelectorAll('input[name="language"]:checked')
+    ).map((input) => input.value).join(", ");
 
-        // Update bio-container with values
-        bioContainer.innerHTML = `
+    bioContainer.innerHTML = `
             <h2 class="bio-heading">My Bio Data</h2>
             <div class="bio-item">
                 <p class="bio-label">Name:</p>
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="bio-item">
                 <p class="bio-label">Gender:</p>
-                <p class="bio-value">${gender || 'Not specified'}</p>
+                <p class="bio-value">${gender || "Not specified"}</p>
             </div>
             <div class="bio-item">
                 <p class="bio-label">Address:</p>
@@ -64,34 +64,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="bio-value">${languages}</p>
             </div>
             <div class="bio-declaration">
-          <p class="bio-declaration-text">Declaration:</p>
-          <p class="bio-declaration-value">
-            I hereby declare that the above information is true and correct to
-            the best of my knowledge and belief. I understand that any false
-            statement or misrepresentation may result in my disqualification or
-            other consequences as deemed appropriate.
-          </p>
-          <br>
-          <p>Date:</p>
-          <p>
-            Place: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Signature
-          </p>
-        </div>
+                <p class="bio-declaration-text">Declaration:</p>
+                <p class="bio-declaration-value">
+                    I hereby declare that the above information is true and correct to
+                    the best of my knowledge and belief. I understand that any false
+                    statement or misrepresentation may result in my disqualification or
+                    other consequences as deemed appropriate.
+                </p>
+                <br>
+                <p>Date:</p>
+                <p>
+                    Place: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Signature
+                </p>
+            </div>
         `;
-    }
+  }
 
-    form.addEventListener('submit', (event) => {
-        event.preventDefault(); 
-        updateBio(); 
-    });
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    updateBio();
+  });
 
-    form.addEventListener('reset', () => {
-        bioContainer.innerHTML = `
+  form.addEventListener("reset", () => {
+    bioContainer.innerHTML = `
             <h2 class="bio-heading">My Bio Data</h2>
             <div class="bio-item">
                 <p class="bio-label">Name:</p>
@@ -138,16 +138,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="bio-value">Not provided</p>
             </div>
             <div class="bio-declaration">
-          <p class="bio-declaration-text">Declaration:</p>
-          <p class="bio-declaration-value">
-            I hereby declare that the above information is true and correct to
-            the best of my knowledge and belief. I understand that any false
-            statement or misrepresentation may result in my disqualification or
-            other consequences as deemed appropriate.
-          </p>
-          <br>
-          <p>Date:</p>
-          <p>
+                <p class="bio-declaration-text">Declaration:</p>
+                <p class="bio-declaration-value">
+                    I hereby declare that the above information is true and correct to
+                    the best of my knowledge and belief. I understand that any false
+                    statement or misrepresentation may result in my disqualification or
+                    other consequences as deemed appropriate.
+                </p>
+                <br>
+                <p>Date:</p>
+                <p>
             Place: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -155,23 +155,30 @@ document.addEventListener('DOMContentLoaded', () => {
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Signature
           </p>
-        </div>
+            </div>
         `;
-    });
-});
+  });
 
-document.getElementById('print-button').addEventListener('click', function() {
-    const printWindow = window.open('', '', 'height=600,width=800');
-    
-    const content = document.querySelector('.bio-container').innerHTML;
-    
-    printWindow.document.write('<html><head><title>Print Bio Data</title>');
-    printWindow.document.write('<style>body { font-family: Arial, sans-serif; margin: 20px; }</style>'); // Add any necessary styles here
-    printWindow.document.write('</head><body >');
-    printWindow.document.write(content);
-    printWindow.document.write('</body></html>');
-    
-    printWindow.document.close();
-    
-    printWindow.print();
+  document
+    .getElementById("print-button")
+    .addEventListener("click", function () {
+      const printWindow = window.open("", "", "height=600,width=800");
+
+      const content = document.querySelector(".bio-container").innerHTML;
+
+      printWindow.document.write("<html><head><title>Print Bio Data</title>");
+      printWindow.document.write(
+        "<style>body { font-family: Arial, sans-serif; margin: 20px; }</style>"
+      );
+      printWindow.document.write("</head><body >");
+      printWindow.document.write(content);
+      printWindow.document.write("</body></html>");
+
+      printWindow.document.close();
+
+      setTimeout(function () {
+        printWindow.focus();
+        printWindow.print();
+      }, 500);
+    });
 });
